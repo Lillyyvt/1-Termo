@@ -1,0 +1,96 @@
+# Exercicio 1 
+# Cálculo de Notas
+# Somativa 1 e Soamtiva 2
+# Valores de 0 a 100
+# O valor a ser atribuido por duas notas e uma média final e ao final deverá ser apresentado o resultado
+
+# print("Cálculo de notas")
+# print("Notas do Senai")
+
+
+# nota1 = float(input("Digite a somativa 1"))
+# nota2 = float(input("Digite a Somativa 2"))
+# media = (nota1 + nota2) / 2
+# print("Sua média final foi: ",round(media,2))
+
+# #exercicio 2
+# # criar um algoritimo para simular uma calculadora
+# # Deverá conter os operadores + - / *
+# # Ao inserir o valor1 e o valor2 ela deve apresentar o resultado
+
+# print(" Bem-vindo a calculadora")
+# print("Escolha a opção")
+# print ("soma +")
+# print("subtração -")
+# print("multiplicação *")
+# print("divisão /")
+
+
+# valor1 = float(input("Digite o valor1"))
+# valor2 = float(input("Digite o valor2"))
+# operador = input("Qual operador deseja?")
+# if operador == "+":
+#     soma = valor1 + valor2
+#     print(" a soma foi: ", soma)
+ 
+# elif operador == "-":
+#     subtração = valor1 - valor2
+#     print("A subtração foi: ", subtração)
+
+# elif operador == "*":
+#     multiplicação = valor1 * valor2
+#     print("A multiplicação foi: ", multiplicação)
+
+# elif operador == "/":
+#     divisão = valor1 / valor2
+#     print("a divisão foi: ", divisão)
+
+# else:
+#     print("Obrigado por usar nossa calculadora")
+
+
+# # exercicio 3
+# # Lojas de roupas, sapatos e perfumes
+# # ao escolher uma das opções você deverá perguntar o valor do produto, a quantidade e aplicar desconto
+# # Roupas = 10%
+# # Sapatos = 5%
+# # Perfumes = 2%
+
+# print("Bem-vindos a loja lilly's") 
+# print(" escolha uma opção de produto")
+# print("digite 1 para roupas")
+# print("Digite 2 para perfume")
+# print("digite 3 para sapato")
+
+
+# operador = int(input(qual produto o operador deseja))
+
+ 
+# if operador == "1":
+#     print("Você escolheu o setor de roupas")
+#     prod = float(input("Digite o valor do produto: "))
+#     qtde = int(input("Digite a quantidade que deseja: ")) 
+#     desconto = 10/100
+#     total = (prod * qtde) - desconto
+#     print("Sua compra no setor de roupas foi de: ", total)
+
+ 
+# elif operador == "2":
+#     print("Você escolheu o setor de perfume")
+#     prod = float(input("Digite o valor do produto: "))
+#     qtde = int(input("Digite a quantidade que deseja: ")) 
+#     desconto = 5/100
+#     total = (prod * qtde) - desconto
+#     print("Sua compra no setor de perfume foi de: ", total)
+
+
+# elif operador == "3":
+#     print("Você escolheu o setor de sapato")
+#     prod = float(input("Digite o valor do produto: "))
+#     qtde = int(input("Digite a quantidade que deseja: ")) 
+#     desconto = 2/100
+#     total = (prod * qtde) - desconto
+#     print("Sua compra no setor de sapato foi de: ", total)
+
+# else: 
+#     print("Obrigada opela sua compra, volte sempre ao lilly's") 

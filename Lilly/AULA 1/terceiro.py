@@ -1,0 +1,5 @@
+print ("Olá Mundo")
+print ("Bem-vindo ao sistema\n")
+print("Opção 1: Estudar Python")
+print ("Opção 2: Ouvir Jeff buckley ")
+print ("Opção 3: Encerrar sistemas")
