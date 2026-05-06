@@ -72,9 +72,9 @@
 
 # idade =  int(input("Digite sua idade:"))
 # if idade == [18]:
-#     print("Você é maior de idade.")
+#      print("Você é maior de idade.")
 # else:
-#      print("Você é menor de idade.")
+#       print("Você é menor de idade.")
 
 
 ("*************************************")
@@ -82,24 +82,38 @@
 # nome = "Mariana"
 # print("Seja Bem-vinda!", nome)
 
+# Melhoria
 
+# nome = input("Qual o seu nome?")
+# if nome == "Mariana":
+#     print("Bem-Vinda, Mariana")
+# else:
+#     print("Você não é a Mariana!, saia!")
 ("*************************************")
 
 # numero = 10
 # if numero > 5:
-#      print("O numero é maior que cinco.")
-
+#  print("O número é maior que cinco.")
 # else:
-#      print("O número é o menor ou igual a cinco.") 
+#  print("O número é menor ou igual a cinco.")
+
+#Melhoria
+# numero = input("Digite um número:")
+# if numero > "5":
+#       print("O numero é maior que cinco.")
+# elif numero == "5":
+#       print("Seu número é igual a cinco!")
+# else:
+#       print("O número é menor do que o cinco.") 
     
 
 ("*************************************")
 
-# usuario = "aluno123"
+# usuario = input("Digite a senha secreta:")
 # if usuario == "aluno123":  
-#     print("Login realizado com sucesso.")
+#      print("Login realizado com sucesso.")
 # else:
-#     print("ERROR no login!")
+#      print("ERROR no login!")
 
 
 ("************************************")
@@ -121,27 +135,30 @@
 
 # nota = int(input("qual foi sua nota?"))
 # if nota ==7:
-#     print("Aprovado!")
-# elif nota <=9:
-#   print("Excelente!")
+#      print("Aprovado!")
+# elif nota >=9:
+#    print("Excelente!")
 # else:
-#   int(print("Que horror!"))
+#    print("Que horror!")
 
 ("***********************************")
 
-# i = ["1, 2, 3, 4, 5"]
-# for i in range  (5):
-#    print("Mostrar na tela os números", i)
+# i = ["1, 2, 3, 4, 5, 6"]
+# for i in range  (6):
+#     print("Mostrar na tela os números", i)
 
 
 ("***********************************")
 
 # tentativas = 1
 # while tentativas <= 3:
-#  print("Tentando conectar...")
-
+#   print("Tentando conectar...")
+#   break
 
 ("****************************************")
 
 # senha = input("Digite a senha secreta:")
-# print("Acesso concedido!")
+# if senha == "python123":
+#     print("Acesso Concedido!")
+# else:
+#     print("Acesso Negado!")
