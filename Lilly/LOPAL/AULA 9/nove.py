@@ -5,7 +5,7 @@ print("Lírioxente, acorde!")
 
 peça = input("Lírioxente, qual peça deseja pegar?")
 if peça == "Vermelho":
-print("Lírioxente, vire 175° e ande 50 passos para frente")
+ print("Lírioxente, vire 175° e ande 50 passos para frente")
 print(f"pegue a peça {peça} e volte para a base")
 print("Entregue a peça!")
 
@@ -15,24 +15,12 @@ print(f"pegue a peça {peça} e volte para a base")
 print("Entregue a peça!")
 
 else:
-print("Error!")
-reniciação = input("Robo deseja continuar o circuito?")
+ print("Error!")
+
+ reniciação = input("Robo deseja continuar o circuito?")
 
 
-
-
-
-
-
-
-
-
-
-
-
-{
-if reniciação == "Sim":
-  print("Recomeçar o comando")
-else:
-  print("Desligar Lírioxente")
-}
+# if reniciação == "Sim":
+#   print("Recomeçar o comando")
+# else:
+#   print("Desligar Lírioxente")
