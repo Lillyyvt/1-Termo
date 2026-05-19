@@ -66,10 +66,9 @@ for relatório in saída:
         print(f" Carro: {informações} | Acesso: {acesso} | Permanência: {tempo} | Total: {total} ")
         break
     elif saída == "não":
-        print("Agradecemos a preferencia!")
+        print("Agradecemos pela preferencia!")
     else:
      print("Obrigada por escolher nosso Shopping lírioxente. Tenha uma Boa tarde!")
-
 print("Finalizando Programa \n Obrigada por escolher nosso Shopping lírioxente. Tenha uma Boa tarde!")
 
 # 　ﾟ･｡･ﾟ　ﾟ･｡･ﾟ　ﾟ･｡･ﾟ　ﾟ･｡･ﾟ　ﾟ･｡･ﾟ　ﾟ･｡･ﾟ　ﾟ･｡･ﾟ
