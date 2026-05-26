@@ -28,6 +28,9 @@
 # Tratamento de Erros
 # Revisão do código
 
+
+
+
 # print("Bem-vindo ao Shopping Lilly's")
 # informaçõesV = float(input("Digite seu modelo de carro e placa"))
 # print(f"Seu veiculo é:" ,informaçõesV)
@@ -64,33 +67,33 @@
 #     print("Obrigado pela visita!")
 
 
-print("Bem-vindo ao Shopping Lilly's")
-("___________________*__________________*_________________")
-print("Escolha as opções")
-print("1 - Ticket \n 2 - TAG \n 3 - Interfone \n")
-metodo_entrada = input("Ticket / Tag / Interfone \n")
+# print("Bem-vindo ao Shopping Lilly's")
+# ("___________________*__________________*_________________")
+# print("Escolha as opções")
+# print("1 - Ticket \n 2 - TAG \n 3 - Interfone \n")
+# metodo_entrada = input("Ticket / Tag / Interfone \n")
 
-if metodo_entrada == "Ticket":
-    print("Bem-Vindo ao Shopping Lilly's")
-    hora_entrada = float(input("Digite a hora de entrada"))
-    valor_estacionamento = float(input("Digite o valor a cobrar"))
-    hora_saida = float(input("Digite o hora de saída"))
-    total_permanencia = hora_saida - hora_entrada
-    print(f"Seu tempo de permanência {total_permanencia} em horas")
-    total_estacionamento = total_permanencia * valor_estacionamento
-    print(f"O valor a ser cobrado foi de R${total_estacionamento:.2f}")
-    print("Devolver Ticket")    
+# if metodo_entrada == "Ticket":
+#     print("Bem-Vindo ao Shopping Lilly's")
+#     hora_entrada = float(input("Digite a hora de entrada"))
+#     valor_estacionamento = float(input("Digite o valor a cobrar"))
+#     hora_saida = float(input("Digite o hora de saída"))
+#     total_permanencia = hora_saida - hora_entrada
+#     print(f"Seu tempo de permanência {total_permanencia} em horas")
+#     total_estacionamento = total_permanencia * valor_estacionamento
+#     print(f"O valor a ser cobrado foi de R${total_estacionamento:.2f}")
+#     print("Devolver Ticket")    
 
     
-elif metodo_entrada == "Tag":
-    print("Bem-Vindo ao Shopping")
-    print("Sua permanência no Shopping será cobrada na sua fatura")
+# elif metodo_entrada == "Tag":
+#     print("Bem-Vindo ao Shopping")
+#     print("Sua permanência no Shopping será cobrada na sua fatura")
 
-elif metodo_entrada == "Interfone":
-    print("Bem-Vindo ao Shopping Lilly's")
-    print("Liberando acesso pelo Interfone")
-    print("Sua saída deverá ser feita também pelo Interfone")
+# elif metodo_entrada == "Interfone":
+#     print("Bem-Vindo ao Shopping Lilly's")
+#     print("Liberando acesso pelo Interfone")
+#     print("Sua saída deverá ser feita também pelo Interfone")
 
-else:
-    print("Obrigado pela visita!")
-("____________________*__________________*_________________")
+# else:
+#     print("Obrigado pela visita!")
+# ("____________________*__________________*_________________")

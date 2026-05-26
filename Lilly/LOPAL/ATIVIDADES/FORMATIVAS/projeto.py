@@ -26,49 +26,49 @@
 # Tratamento de Erros
 # Revisão do código
 
-while True:
- print("Bem-vindo ao estacionamento do Shopping lírioxente")
+# while True:
+#  print("Bem-vindo ao estacionamento do Shopping lírioxente")
   
-# 　ﾟ･｡･ﾟ　ﾟ･｡･ﾟ　ﾟ･｡･ﾟ　ﾟ･｡･ﾟ　ﾟ･｡･ﾟ　ﾟ･｡･ﾟ　ﾟ･｡･ﾟ
+# # 　ﾟ･｡･ﾟ　ﾟ･｡･ﾟ　ﾟ･｡･ﾟ　ﾟ･｡･ﾟ　ﾟ･｡･ﾟ　ﾟ･｡･ﾟ　ﾟ･｡･ﾟ
 
- informações = input("Qual sua marca e placa do carro")
- Relatório = print("Relatório \n Opção 1: TAG \n Opção 2: Ticket \n Opção 3: Interfone")
- acesso = input("Como deseja seu acesso?")
- if acesso == "TAG":
-    print("Acesso liberado! Aproveite o passeio")
- elif acesso == "Ticket":
-    print("Aperte o botão para emitir o ticket! \n Aproveite o passeio")
- elif acesso == "Intefone":
-    print("Estamos lhe encaminhando para a ligação!")
- else:
-    print("Error! Tente novamente.")
- break
-# 　ﾟ･｡･ﾟ　ﾟ･｡･ﾟ　ﾟ･｡･ﾟ　ﾟ･｡･ﾟ　ﾟ･｡･ﾟ　ﾟ･｡･ﾟ　ﾟ･｡･ﾟ
+#  informações = input("Qual sua marca e placa do carro")
+#  Relatório = print("Relatório \n Opção 1: TAG \n Opção 2: Ticket \n Opção 3: Interfone")
+#  acesso = input("Como deseja seu acesso?")
+#  if acesso == "TAG":
+#     print("Acesso liberado! Aproveite o passeio")
+#  elif acesso == "Ticket":
+#     print("Aperte o botão para emitir o ticket! \n Aproveite o passeio")
+#  elif acesso == "Intefone":
+#     print("Estamos lhe encaminhando para a ligação!")
+#  else:
+#     print("Error! Tente novamente.")
+#  break
+# # 　ﾟ･｡･ﾟ　ﾟ･｡･ﾟ　ﾟ･｡･ﾟ　ﾟ･｡･ﾟ　ﾟ･｡･ﾟ　ﾟ･｡･ﾟ　ﾟ･｡･ﾟ
 
-tempo = float(input("Qual foi seu tempo de permanência?"))
-preço = 4 # $ por hora
-total = tempo * preço
+# tempo = float(input("Qual foi seu tempo de permanência?"))
+# preço = 4 # $ por hora
+# total = tempo * preço
 
-for saída in acesso:
-    if acesso == "Ticket":
-        print(f"Você deve pagar ${total}")
-    elif acesso == "TAG":
-        print(f"Geraremos a fatura de ${total} no TAG")
-    else:
-        print("Error, tente novamente ou acesse o interfone!")
-    break
+# for saída in acesso:
+#     if acesso == "Ticket":
+#         print(f"Você deve pagar ${total}")
+#     elif acesso == "TAG":
+#         print(f"Geraremos a fatura de ${total} no TAG")
+#     else:
+#         print("Error, tente novamente ou acesse o interfone!")
+#     break
  
-# 　ﾟ･｡･ﾟ　ﾟ･｡･ﾟ　ﾟ･｡･ﾟ　ﾟ･｡･ﾟ　ﾟ･｡･ﾟ　ﾟ･｡･ﾟ　ﾟ･｡･ﾟ
+# # 　ﾟ･｡･ﾟ　ﾟ･｡･ﾟ　ﾟ･｡･ﾟ　ﾟ･｡･ﾟ　ﾟ･｡･ﾟ　ﾟ･｡･ﾟ　ﾟ･｡･ﾟ
 
-saída = input("Deseja o relatório do carro?")      
-for relatório in saída: 
-    if saída == "sim":
-        print(f" Carro: {informações} | Acesso: {acesso} | Permanência: {tempo} | Total: {total} ")
-        break
-    elif saída == "não":
-        print("Agradecemos pela preferencia!")
-    else:
-     print("Obrigada por escolher nosso Shopping lírioxente. Tenha uma Boa tarde!")
-print("Finalizando Programa \n Obrigada por escolher nosso Shopping lírioxente. Tenha uma Boa tarde!")
+# saída = input("Deseja o relatório do carro?")      
+# for relatório in saída: 
+#     if saída == "sim":
+#         print(f" Carro: {informações} | Acesso: {acesso} | Permanência: {tempo} | Total: {total} ")
+#         break
+#     elif saída == "não":
+#         print("Agradecemos pela preferencia!")
+#     else:
+#      print("Obrigada por escolher nosso Shopping lírioxente. Tenha uma Boa tarde!")
+# print("Finalizando Programa \n Obrigada por escolher nosso Shopping lírioxente. Tenha uma Boa tarde!")
 
 # 　ﾟ･｡･ﾟ　ﾟ･｡･ﾟ　ﾟ･｡･ﾟ　ﾟ･｡･ﾟ　ﾟ･｡･ﾟ　ﾟ･｡･ﾟ　ﾟ･｡･ﾟ
