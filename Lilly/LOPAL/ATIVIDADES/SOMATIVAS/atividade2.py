@@ -81,37 +81,72 @@
 #★-★-★-★-★-★-★-★-★-★-★-★-★-★
 
 #2.
+# import tkinter as tk
+# from tkinter import messagebox
+# def Calculo_Producao():
+#      pecas = int(campo_pecas.get())
+#      horas = int(campo_horas.get())
+     
+#      if pecas == "":
+#           messagebox.showwarning("Aviso", "Por favor, Qual a quantidade de peças feitas em 1hr?")
+#      else:
+#           quantidade = pecas * horas  
+#           messagebox.showinfo("Olá!!:D", f"Resultado: {quantidade}")
+
+# app = tk.Tk()
+# app.title("Cálculo de Produção ★")
+# app.geometry("350x200")
+
+ 
+# lbl_instrucao = tk.Label(app, text="Digite a quantidade abaixo:") 
+# lbl_instrucao.pack(pady=5)
+
+# campo_pecas = tk.Entry(app, font=("Arial", 11))
+# campo_pecas.pack(pady=5)
+
+ 
+# lbl_instrucao = tk.Label(app, text="Digite tempo de produção:") 
+# lbl_instrucao.pack(pady=10)
+
+# campo_horas = tk.Entry(app, font=("Arial", 11))
+# campo_horas.pack(pady=10)
+
+# btn_enviar = tk.Button(app, text="Enviar", bg="#1c1835", fg="yellow",command=Calculo_Producao)
+# btn_enviar.pack(pady=15)
+
+# app.mainloop()
+
+#★-★-★-★-★-★-★-★-★-★-★-★-★-★
+
+#3.
 import tkinter as tk
 from tkinter import messagebox
-def Calculo_Producao():
-     pecas = int(campo_pecas.get())
-     horas = int(campo_horas.get())
+def Conversor_Unidade():
+      bar = int(campo_barP.get())
      
-     if pecas == "":
-          messagebox.showwarning("Aviso", "Por favor, Qual a quantidade de peças feitas em 1hr?")
-     else:
-          quantidade = pecas * horas  
-          messagebox.showinfo("Olá!!:D", f"Resultado: {quantidade}")
+      if bar == "":
+           messagebox.showwarning("VAI BRASIL!", "Por Favor, digite o a conversão de Unidade")
+      else:
+           PSI = bar * 14.5 #PSI  
+           messagebox.showinfo("Olá!!:D", f"A pressão convertida é: {PSI}")
 
 app = tk.Tk()
-app.title("Cálculo de Produção ★")
+app.title("Conversor de Unidade ★")
 app.geometry("350x200")
 
  
-lbl_instrucao = tk.Label(app, text="Digite a quantidade abaixo:") 
+lbl_instrucao = tk.Label(app, text="Digite a pressão em Bar:") 
 lbl_instrucao.pack(pady=5)
 
-campo_pecas = tk.Entry(app, font=("Arial", 11))
-campo_pecas.pack(pady=5)
+campo_barP = tk.Entry(app, font=("Arial", 11))
+campo_barP.pack(pady=5)
 
  
-lbl_instrucao = tk.Label(app, text="Digite tempo de produção:") 
-lbl_instrucao.pack(pady=10)
 
-campo_horas = tk.Entry(app, font=("Arial", 11))
-campo_horas.pack(pady=10)
-
-btn_enviar = tk.Button(app, text="Enviar", bg="#1c1835", fg="yellow",command=Calculo_Producao)
+btn_enviar = tk.Button(app, text="Enviar", bg="#12270A", fg="yellow",command=Conversor_Unidade)
 btn_enviar.pack(pady=15)
 
 app.mainloop()
+
+
+
