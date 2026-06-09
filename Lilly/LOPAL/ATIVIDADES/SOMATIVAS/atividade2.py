@@ -44,36 +44,74 @@
 # RESPOSTA:
 
 #1.  
+# import tkinter as tk
+# from tkinter import messagebox
+# def registro_operacionais():
+#     nome = campo_nome.get()
+#     turno = turno_usuario.get()
+     
+#     if nome == "" and turno == "":
+#          messagebox.showwarning("Aviso", "Por favor, digite seu nome!")
+#     else:
+#          messagebox.showinfo("Bem-Vindo", f"Operador {nome} registrado no Turno {turno}. Boa jornada!")
+
+# app = tk.Tk()
+# app.title("Registro OP ★")
+# app.geometry("350x200")
+
+# #Nome
+# lbl_instrucao = tk.Label(app, text="Digite seu nome abaixo:") 
+# lbl_instrucao.pack(pady=5)
+
+# campo_nome = tk.Entry(app, font=("Arial", 11))
+# campo_nome.pack(pady=5)
+
+# #Turno
+# lbl_instrucao = tk.Label(app, text="Digite seu turno abaixo:") 
+# lbl_instrucao.pack(pady=10)
+
+# turno_usuario = tk.Entry(app, font=("Arial", 11))
+# turno_usuario.pack(pady=10)
+
+# btn_enviar = tk.Button(app, text="Enviar", bg="#143d24", fg="beige",command=registro_operacionais)
+# btn_enviar.pack(pady=15)
+
+# app.mainloop()
+
+#★-★-★-★-★-★-★-★-★-★-★-★-★-★
+
+#2.
 import tkinter as tk
 from tkinter import messagebox
-def registro_operacionais():
-    nome = campo_nome.get()
-    turno = turno_usuario.get()
+def Calculo_Producao():
+     pecas = int(campo_pecas.get())
+     horas = int(campo_horas.get())
      
-    if nome == "" and turno == "":
-         messagebox.showwarning("Aviso", "Por favor, digite seu nome!")
-    else:
-         messagebox.showinfo("Bem-Vindo", f"Operador {nome} registrado no Turno {turno}. Boa jornada!")
+     if pecas == "":
+          messagebox.showwarning("Aviso", "Por favor, Qual a quantidade de peças feitas em 1hr?")
+     else:
+          quantidade = pecas * horas  
+          messagebox.showinfo("Olá!!:D", f"Resultado: {quantidade}")
 
 app = tk.Tk()
-app.title("Registro OP ★")
+app.title("Cálculo de Produção ★")
 app.geometry("350x200")
 
-#Nome
-lbl_instrucao = tk.Label(app, text="Digite seu nome abaixo:") 
+ 
+lbl_instrucao = tk.Label(app, text="Digite a quantidade abaixo:") 
 lbl_instrucao.pack(pady=5)
 
-campo_nome = tk.Entry(app, font=("Arial", 11))
-campo_nome.pack(pady=5)
+campo_pecas = tk.Entry(app, font=("Arial", 11))
+campo_pecas.pack(pady=5)
 
-#Turno
-lbl_instrucao = tk.Label(app, text="Digite seu turno abaixo:") 
+ 
+lbl_instrucao = tk.Label(app, text="Digite tempo de produção:") 
 lbl_instrucao.pack(pady=10)
 
-turno_usuario = tk.Entry(app, font=("Arial", 11))
-turno_usuario.pack(pady=10)
+campo_horas = tk.Entry(app, font=("Arial", 11))
+campo_horas.pack(pady=10)
 
-btn_enviar = tk.Button(app, text="Enviar", bg="#143d24", fg="beige",command=registro_operacionais)
+btn_enviar = tk.Button(app, text="Enviar", bg="#1c1835", fg="yellow",command=Calculo_Producao)
 btn_enviar.pack(pady=15)
 
 app.mainloop()
