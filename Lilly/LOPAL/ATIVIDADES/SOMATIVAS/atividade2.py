@@ -44,24 +44,31 @@
 # RESPOSTA:
 
 #1.  
-def janela_bemvindo():
-    nome = nome_usuario.get()
+import tkinter as tk
+from tkinter import messagebox
+def registro_operacionais():
+    nome = campo_nome.get()
     turno = turno_usuario.get()
-
-    if nome == "" and turno =="":
-
-        messagebox.showwarning("Aviso", "Digite seu nome e seu turno ★")
-
+     
+    if nome == "" and turno == "":
+         messagebox.showwarning("Por favor, digite seu nome!")
     else:
-        messagebox.showinfo("Bem-Vindo", f"Operador [Nome] registrado no Turno [Turno]. Boa jornada!")
+         messagebox.showinfo("Operador [nome] registrado no Turno [turno]. Boa jornada!")
 
-lbl_titulo_pagina = tk.Label(janela, text="Bem-Vindo Registro de Operador!", font=("Arial", 14, "bold"))
-btn_clique_pagina = tk.Button(janela, text="Digite seu nome", font=("Antiqua Moderna", 14), bg="#3b0505", fg="beige", command=mostrar_mensagem)
-btn_fechar_janela = tk.Button(janela, text="Fechar", font=("Antiqua Moderna", 14), bg="#3d3214", fg="beige", command=janela.destroy)
+app = tk.Tk9()
+app.title("Registro OP")
+app.geometry("350x200")
 
-lbl_titulo_pagina.pack(pady=20) 
-btn_clique_pagina.pack(pady=15)
-btn_fechar_janela.pack(pady=10)
+lbl_instrucao = tk.Label(app, text="Digite seu nome abaixo:") # type: ignore
+lbl_instrucao.pack(pady=5)
 
-janela.mainloop()
+campo_nome = tk.Entry(app, font=("Arial", 11))
+campo_nome.pack(pady=5)
 
+turno_usuario = tk.Entry(app, font=("Arial", 11))
+turno_usuario.pack(pady=10)
+
+btn_enviar = tk.Button(app, text="Enviar"),  comman=registro_operacionais
+btn_enviar.pack(pady=15)
+
+app.mainloop()
