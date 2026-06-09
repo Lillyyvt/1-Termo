@@ -33,52 +33,52 @@
 # data = int(input("Por quantos dias deseja fazer o emprestimo"))
 
 
-import tkinter as tk
-from tkinter import messagebox, ttk
+# import tkinter as tk
+# from tkinter import messagebox, ttk
 
-def janela_bemvindo():
-    nome = nome_usuario.get()
-    livro = livro_usuario.get()
+# def janela_bemvindo():
+#     nome = nome_usuario.get()
+#     livro = livro_usuario.get()
 
 
 
-    if nome ==  "":
-        messagebox.showwarning("Aviso", "Digite o login:")
-    else:
-        messagebox.showinfo("Bem-Vindo a Biblioteca Lilly's")
+#     if nome ==  "":
+#         messagebox.showwarning("Aviso", "Digite o login:")
+#     else:
+#         messagebox.showinfo("Bem-Vindo a Biblioteca Lilly's")
 
-def segunda_janela():
-    segunda_janela = tk.Toplevel(janela)
-    segunda_janela.tilte("Biblioteca Comunitária Lilly's")
-    segunda_janela.geometry("300x300")
+# def segunda_janela():
+#     segunda_janela = tk.Toplevel(janela)
+#     segunda_janela.tilte("Biblioteca Comunitária Lilly's")
+#     segunda_janela.geometry("300x300")
   
-    if livro == "":
-        messagebox.showwarning("Cuidado. Caso o livro seja da categoria 'Raros',não será possivel emprestar a Comunidade Geral, apenas para Alunos.")
+#     if livro == "":
+#         messagebox.showwarning("Cuidado. Caso o livro seja da categoria 'Raros',não será possivel emprestar a Comunidade Geral, apenas para Alunos.")
 
-    else:
-        messagebox.showinfo("")
+#     else:
+#         messagebox.showinfo("")
 
-janela = tk.Tk()
-janela.title("Exemplo 2")
-janela.geometry("300x300")
-janela.configure(bg="maroon")
-
-
-lbl_mensagem = tk.Label(janela, text="Digite o nome:")
-lbl_mensagem.grid(row=0, column=0, pady=10, padx=10)
-lbl_livro = tk.Label(janela, text="Digite o livro desejado:")
-lbl_livro.grid(row=1, column=0, pady=10, padx=10)
+# janela = tk.Tk()
+# janela.title("Exemplo 2")
+# janela.geometry("300x300")
+# janela.configure(bg="maroon")
 
 
-nome_usuario = tk.Entry(janela, font=("Arial", 12))
-nome_usuario.grid(row=0, column=1, pady=10, padx=10)
-livro_usuario = tk.Entry(janela, font=("Arial", 12))
-livro_usuario.grid(row=1, column=1, pady=10, padx=10)
+# lbl_mensagem = tk.Label(janela, text="Digite o nome:")
+# lbl_mensagem.grid(row=0, column=0, pady=10, padx=10)
+# lbl_livro = tk.Label(janela, text="Digite o livro desejado:")
+# lbl_livro.grid(row=1, column=0, pady=10, padx=10)
+
+
+# nome_usuario = tk.Entry(janela, font=("Arial", 12))
+# nome_usuario.grid(row=0, column=1, pady=10, padx=10)
+# livro_usuario = tk.Entry(janela, font=("Arial", 12))
+# livro_usuario.grid(row=1, column=1, pady=10, padx=10)
 
 
 
-btn_segunda_janela = tk.Button(janela, text="Enter", command=segunda_janela)
-btn_segunda_janela.grid(row=3, column=0, pady=10, padx=10)
+# btn_segunda_janela = tk.Button(janela, text="Enter", command=segunda_janela)
+# btn_segunda_janela.grid(row=3, column=0, pady=10, padx=10)
 
-# Rodar interface
-janela.mainloop()
+# # Rodar interface
+# janela.mainloop()
