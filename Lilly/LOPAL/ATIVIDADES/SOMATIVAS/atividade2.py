@@ -51,24 +51,29 @@ def registro_operacionais():
     turno = turno_usuario.get()
      
     if nome == "" and turno == "":
-         messagebox.showwarning("Por favor, digite seu nome!")
+         messagebox.showwarning("Aviso", "Por favor, digite seu nome!")
     else:
-         messagebox.showinfo("Operador [nome] registrado no Turno [turno]. Boa jornada!")
+         messagebox.showinfo("Bem-Vindo", f"Operador {nome} registrado no Turno {turno}. Boa jornada!")
 
-app = tk.Tk9()
-app.title("Registro OP")
+app = tk.Tk()
+app.title("Registro OP ★")
 app.geometry("350x200")
 
-lbl_instrucao = tk.Label(app, text="Digite seu nome abaixo:") # type: ignore
+#Nome
+lbl_instrucao = tk.Label(app, text="Digite seu nome abaixo:") 
 lbl_instrucao.pack(pady=5)
 
 campo_nome = tk.Entry(app, font=("Arial", 11))
 campo_nome.pack(pady=5)
 
+#Turno
+lbl_instrucao = tk.Label(app, text="Digite seu turno abaixo:") 
+lbl_instrucao.pack(pady=10)
+
 turno_usuario = tk.Entry(app, font=("Arial", 11))
 turno_usuario.pack(pady=10)
 
-btn_enviar = tk.Button(app, text="Enviar"),  comman=registro_operacionais
+btn_enviar = tk.Button(app, text="Enviar", bg="#143d24", fg="beige",command=registro_operacionais)
 btn_enviar.pack(pady=15)
 
 app.mainloop()
