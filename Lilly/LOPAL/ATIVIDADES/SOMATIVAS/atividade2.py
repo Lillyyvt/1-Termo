@@ -264,41 +264,41 @@
 #★-★-★-★-★-★-★-★-★-★-★-★-★-★
 
 #7.
-import tkinter as tk
-from tkinter import messagebox
-def Segurança_Operação():
-         sensor = (sensor_porta.get())
-         botao = (botao_emergencia())
-         if sensor == "fechada":
-              messagebox.showwarning("Aviso", "É possivel ligar o Sensor?")
-         elif botao == "desligado":
-               messagebox.showwarning("Aviso", "É possivel ligar o Botão?")
-         elif sensor and botao == "Ligado":
-             messagebox.showwarning("Aviso", "Continue sua Operação!")  
-         else:
-              messagebox.showinfo("Iniciando Segurança de OPeração...", f"Ligando as Máquinas...")
+# import tkinter as tk
+# from tkinter import messagebox
+# def Segurança_Operação():
+#          sensor = (sensor_porta.get())
+#          botao = (botao_emergencia())
+#          if sensor == "fechada":
+#               messagebox.showwarning("Aviso", "É possivel ligar o Sensor?")
+#          elif botao == "desligado":
+#                messagebox.showwarning("Aviso", "É possivel ligar o Botão?")
+#          elif sensor and botao == "Ligado":
+#              messagebox.showwarning("Aviso", "Continue sua Operação!")  
+#          else:
+#               messagebox.showinfo("Iniciando Segurança de OPeração...", f"Ligando as Máquinas...")
 
-app = tk.Tk()
-app.title("Segurança de Operação ★")
-app.geometry("350x300")
-app.configure(bg="#29033A")
+# app = tk.Tk()
+# app.title("Segurança de Operação ★")
+# app.geometry("350x300")
+# app.configure(bg="#29033A")
  
-#Sensor
-lbl_instrucao = tk.Label(app, text="DIgite o estado do Sensor:", bg="#A9A3FD", fg="yellow") 
-lbl_instrucao.pack(pady=5)
+# #Sensor
+# lbl_instrucao = tk.Label(app, text="DIgite o estado do Sensor:", bg="#A9A3FD", fg="yellow") 
+# lbl_instrucao.pack(pady=5)
 
-sensor_porta = tk.Entry(app, font=("Arial", 11))
-sensor_porta.pack(pady=5)
+# sensor_porta = tk.Entry(app, font=("Arial", 11))
+# sensor_porta.pack(pady=5)
 
-#Botão
-lbl_instrucao = tk.Label(app, text="DIgite o estado do Botão:", bg="#A9A3FD", fg="yellow") 
-lbl_instrucao.pack(pady=5)
+# #Botão
+# lbl_instrucao = tk.Label(app, text="DIgite o estado do Botão:", bg="#A9A3FD", fg="yellow") 
+# lbl_instrucao.pack(pady=5)
 
-botao_emergencia = tk.Entry(app, font=("Arial", 11))
-botao_emergencia.pack(pady=5)
+# botao_emergencia = tk.Entry(app, font=("Arial", 11))
+# botao_emergencia.pack(pady=5)
 
-btn_enviar = tk.Button(app, text="Enviar", bg="#DEDEF0", fg="white",command=Segurança_Operação)
-btn_enviar.pack(pady=15)
+# btn_enviar = tk.Button(app, text="Enviar", bg="#DEDEF0", fg="white",command=Segurança_Operação)
+# btn_enviar.pack(pady=15)
 
-app.mainloop()
+# app.mainloop()
 
