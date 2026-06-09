@@ -96,7 +96,7 @@
 # app = tk.Tk()
 # app.title("Cálculo de Produção ★")
 # app.geometry("350x200")
-
+# app.configure(bg="#3E7243")
  
 # lbl_instrucao = tk.Label(app, text="Digite a quantidade abaixo:") 
 # lbl_instrucao.pack(pady=5)
@@ -133,7 +133,7 @@
 # app = tk.Tk()
 # app.title("Conversor de Unidade ★")
 # app.geometry("350x200")
-
+# app.configure(bg="blue")
  
 # lbl_instrucao = tk.Label(app, text="Digite a pressão em Bar:") 
 # lbl_instrucao.pack(pady=5)
@@ -148,5 +148,81 @@
 
 # app.mainloop()
 
+#★-★-★-★-★-★-★-★-★-★-★-★-★-★
+
+#4.
+# import tkinter as tk
+# from tkinter import messagebox
+# def Média_Qualidade():
+#       nota1 = int(campo_um.get())
+#       nota2 = int(campo_dois.get())
+#       nota3 = int(campo_tres.get())
+
+#       if nota1 == "" and nota2 == "" and nota3 == "":
+#            messagebox.showwarning("Aviso", "Por Favor, dê uma nota de 0 a 10!")
+#       else:
+#            total = nota1 + nota2 + nota3 / 3
+#            messagebox.showinfo("BRASIL!!", f"Resultado: {total}")
+
+# app = tk.Tk()
+# app.title("Média de Qualidade ★")
+# app.geometry("350x300")
+# app.configure(bg="olive")
+ 
+# lbl_instrucao = tk.Label(app, text="Digite a nota1 abaixo:") 
+# lbl_instrucao.pack(pady=5)
+
+# campo_um = tk.Entry(app, font=("Arial", 11))
+# campo_um.pack(pady=5)
+
+ 
+# lbl_instrucao = tk.Label(app, text="Digite a nota2 abaixo:") 
+# lbl_instrucao.pack(pady=10)
+
+# campo_dois = tk.Entry(app, font=("Arial", 11))
+# campo_dois.pack(pady=10)
+
+# lbl_instrucao = tk.Label(app, text="Digite nota3 abaixo:") 
+# lbl_instrucao.pack(pady=15)
+
+# campo_tres = tk.Entry(app, font=("Arial", 11))
+# campo_tres.pack(pady=15)
+
+# btn_enviar = tk.Button(app, text="Enviar", bg="#CFCC17", fg="blue",command=Média_Qualidade)
+# btn_enviar.pack(pady=15)
+
+# app.mainloop()
+
+#★-★-★-★-★-★-★-★-★-★-★-★-★-★
+
+#5.
+import tkinter as tk
+from tkinter import messagebox
+def Termostato_Inteligente():
+       temp = int(campo_temp.get())
+
+       if temp <= 40:
+            messagebox.showwarning("Aviso", "Baixa carga")
+       elif temp >= 40 and temp < 70:
+             messagebox.showwarning("Aviso", "Normal")
+       elif temp > 70:
+             messagebox.showwarning("Aviso", "ALERTA: Resfriamento Ativado!")
+       else:
+            messagebox.showinfo("BRASIL!!", f" A temperatura está em estado de {temp}")
+
+app = tk.Tk()
+app.title("Termostato Inteligente ★")
+app.geometry("350x300")
+app.configure(bg="#C4961A")
+ 
+lbl_instrucao = tk.Label(app, text="Digite a temperatura abaixo:") 
+lbl_instrucao.pack(pady=5)
+
+campo_temp = tk.Entry(app, font=("Arial", 11))
+campo_temp.pack(pady=5)
 
 
+btn_enviar = tk.Button(app, text="Enviar", bg="#422408", fg="beige",command=Termostato_Inteligente)
+btn_enviar.pack(pady=15)
+
+app.mainloop()
