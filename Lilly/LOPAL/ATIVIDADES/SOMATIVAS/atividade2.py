@@ -119,34 +119,34 @@
 #★-★-★-★-★-★-★-★-★-★-★-★-★-★
 
 #3.
-import tkinter as tk
-from tkinter import messagebox
-def Conversor_Unidade():
-      bar = int(campo_barP.get())
+# import tkinter as tk
+# from tkinter import messagebox
+# def Conversor_Unidade():
+#       bar = int(campo_barP.get())
      
-      if bar == "":
-           messagebox.showwarning("VAI BRASIL!", "Por Favor, digite o a conversão de Unidade")
-      else:
-           PSI = bar * 14.5 #PSI  
-           messagebox.showinfo("Olá!!:D", f"A pressão convertida é: {PSI}")
+#       if bar == "":
+#            messagebox.showwarning("VAI BRASIL!", "Por Favor, digite o a conversão de Unidade")
+#       else:
+#            PSI = bar * 14.5 #PSI  
+#            messagebox.showinfo("Olá!!:D", f"A pressão convertida é: {PSI}")
 
-app = tk.Tk()
-app.title("Conversor de Unidade ★")
-app.geometry("350x200")
-
- 
-lbl_instrucao = tk.Label(app, text="Digite a pressão em Bar:") 
-lbl_instrucao.pack(pady=5)
-
-campo_barP = tk.Entry(app, font=("Arial", 11))
-campo_barP.pack(pady=5)
+# app = tk.Tk()
+# app.title("Conversor de Unidade ★")
+# app.geometry("350x200")
 
  
+# lbl_instrucao = tk.Label(app, text="Digite a pressão em Bar:") 
+# lbl_instrucao.pack(pady=5)
 
-btn_enviar = tk.Button(app, text="Enviar", bg="#12270A", fg="yellow",command=Conversor_Unidade)
-btn_enviar.pack(pady=15)
+# campo_barP = tk.Entry(app, font=("Arial", 11))
+# campo_barP.pack(pady=5)
 
-app.mainloop()
+ 
+
+# btn_enviar = tk.Button(app, text="Enviar", bg="#12270A", fg="yellow",command=Conversor_Unidade)
+# btn_enviar.pack(pady=15)
+
+# app.mainloop()
 
 
 
