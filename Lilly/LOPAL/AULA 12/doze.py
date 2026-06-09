@@ -1,5 +1,5 @@
-import tkinter as tk
-from tkinter import messagebox
+# import tkinter as tk
+# from tkinter import messagebox
 
 # .get() serve para buscar informação na caixa de texto
 # def janela_bemvindo():
