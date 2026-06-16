@@ -4,7 +4,9 @@
 # f = Acionar a variavel
 # total:.2f = irá arredondar seu valor
 # ,round(total,2 = ira arredondar seu valor
-
+# container = tk.Frame (app, bg="#131327", bd=2, relief="groove")
+# container.place(relx=0.5, rely=5, anchor="center", widath= 300, height=300)
+#produzida
 
 # 1. Registro de Veículo: Peça o modelo do veículo e a placa. ○ Exiba: "Veículo [Modelo] de placa [Placa] registrado no sistema. Boa viagem!" 
 # print("Registro de Veículo")

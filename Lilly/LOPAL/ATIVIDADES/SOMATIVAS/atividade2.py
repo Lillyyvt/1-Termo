@@ -268,7 +268,7 @@
 # from tkinter import messagebox
 # def Segurança_Operação():
 #          sensor = (sensor_porta.get())
-#          botao = (botao_emergencia())
+#          botao = (botao_emergencia.get())
 #          if sensor == "fechada":
 #               messagebox.showwarning("Aviso", "É possivel ligar o Sensor?")
 #          elif botao == "desligado":
@@ -302,3 +302,112 @@
 
 # app.mainloop()
 
+#★-★-★-★-★-★-★-★-★-★-★-★-★-★
+
+#8.
+# import tkinter as tk
+# from tkinter import messagebox
+# def Cálculo_Descarte():
+#           produzida = int(peca_poduzida.get())
+#           defeituosa = int(total_defeituosas.get())
+#           if produzida < 5:
+#                messagebox.showwarning("Aviso", "Processo Otimizado")
+#           elif defeituosa > 5:
+#                 messagebox.showwarning("Aviso", "Revisar Processo")
+#           else:
+#                total = produzida - defeituosa
+#                messagebox.showinfo("Cálculo de Descarte", f"O total de peças é {total}")
+
+# app = tk.Tk()
+# app.title("Cálculo de Descarte ★")
+# app.geometry("350x300")
+# app.configure(bg="#53728B")
+
+# lbl_instrucao = tk.Label(app, text="DIgite a porcentagem de peças produzidas:", bg="#09072B", fg="white") 
+# lbl_instrucao.pack(pady=5)
+
+# peca_poduzida = tk.Entry(app, font=("Arial", 11))
+# peca_poduzida.pack(pady=5)
+
+
+# #defeituosa
+# lbl_instrucao = tk.Label(app, text="DIgite a porcentagem de peças defeituosas:", bg="#09072B", fg="white") 
+# lbl_instrucao.pack(pady=10)
+
+# total_defeituosas = tk.Entry(app, font=("Arial", 11))
+# total_defeituosas.pack(pady=10)
+
+# #enviar
+
+# btn_enviar = tk.Button(app, text="Enviar", bg="#DEDEF0", fg="white",activebackground= "#05051F",command=Cálculo_Descarte)
+# btn_enviar.pack(pady=15)
+
+# app.mainloop()
+
+#★-★-★-★-★-★-★-★-★-★-★-★-★-★
+#9.
+# import tkinter as tk
+# from tkinter import messagebox
+# def Validação_Medida():
+#           medida = int(float(peca_medida.get()))
+#           if medida > 10.2:
+#                messagebox.showwarning("Aviso", "Tolerância acima. A peça deve ter entre 9.8mm e 10.2mm")
+#           elif medida < 9.8:
+#                messagebox.showwarning("Aviso", "Tolerância abaixo. A peça deve ter entre 9.8mm e 10.2mm")
+#           else:
+#                messagebox.showinfo("Validação de Medida ★", f"Tolerância aceitável")
+
+# app = tk.Tk()
+# app.title("Validação de Medida ★")
+# app.geometry("350x300")
+# app.configure(bg="#8B5353")
+
+# # peça
+# lbl_instrucao = tk.Label(app, text="Digite mm da peça :", bg="#2B0707", fg="white") 
+# lbl_instrucao.pack(pady=5)
+
+# peca_medida = tk.Entry(app, font=("Arial", 11))
+# peca_medida.pack(pady=5)
+
+
+# #enviar
+# btn_enviar = tk.Button(app, text="Enviar", bg="#F0DEDE", fg="white",activebackground= "#1F0505",command=Validação_Medida)
+# btn_enviar.pack(pady=15)
+
+# app.mainloop()
+
+#★-★-★-★-★-★-★-★-★-★-★-★-★-★
+#10. 
+# import tkinter as tk
+# from tkinter import messagebox
+# def Contagem_Regressiva_Setup():
+#           contagem = int(contagem_regressiva.get())
+# import time
+# # contagem = [1,10]
+# for número in range(10,0,-1):
+#       if número == "":
+#        import time
+#        messagebox.showwarning("Contagem Regressiva de Setup ★",{número})                      
+#        continue
+#       else:
+#        messagebox.showwarning("Contagem Regressiva de Setup ★", {número})  
+
+
+# app = tk.Tk()
+# app.title("Contagem Regressiva de Setup ★")
+# app.geometry("350x300")
+# app.configure(bg="#8B5353")
+
+# # peça
+# lbl_instrucao = tk.Label(app, text=" ", bg="#2B0707", fg="white") 
+# lbl_instrucao.pack(pady=5)
+
+# contagem_regressiva = tk.Entry(app, font=("Arial", 11))
+# contagem_regressiva.pack(pady=5)
+
+
+# #enviar
+# btn_enviar = tk.Button(app, text="Enviar", bg="#F0DEDE", fg="white",activebackground= "#1F0505",command=Contagem_Regressiva_Setup)
+# btn_enviar.pack(pady=15)
+
+# app.mainloop()
